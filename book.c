@@ -11,7 +11,7 @@ struct book{
     int sno;
     char title[30];
     struct author aname[5];
-    int pyear;
+    int price;
 };
 int main(){
     int n;
@@ -23,8 +23,8 @@ int main(){
         scanf("%d", &details[i].sno);
         printf("enter title: ");
         scanf(" %[^\n]", details[i].title);
-        printf("enter publishing year: ");
-        scanf("%d", &details[i].pyear);
+        printf("enter price: ");
+        scanf("%d", &details[i].price);
         printf("enter author first name: ");
         scanf("%s", details[i].aname[i].first_name);
         printf("enter middle name: ");
@@ -36,7 +36,7 @@ int main(){
     for(int i=0; i<n; i++){
         printf("serial no : %d\n", details[i].sno);
         printf("book title : %s\n", details[i].title);
-        printf("publishing year : %d\n",details[i].pyear);
+        printf("price : %d\n",details[i].price);
         printf("author name: %s %s %s\n", details[i].aname[i].first_name, details[i].aname[i].middle_name, details[i].aname[i].surname); 
     }
 }
