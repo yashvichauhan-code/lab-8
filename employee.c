@@ -13,13 +13,13 @@ int main() {
     scanf("%d", &n);
     struct employee details[n];
     for(int i = 0; i < n; i++) {
-        printf("Enter employee name: ");
+        printf("enter employee name: ");
         scanf(" %[^\n]", details[i].ename);   
 
-        printf("Enter basic pay: ");
+        printf("enter basic pay: ");
         scanf(" %d", &details[i].basic_pay);
     }
-    printf("\n\nEmployee Details\n");
+    printf("\n\n\n----Employee Details----\n");
     for(int i = 0; i < n; i++) {
         int da = details[i].basic_pay * 52 / 100;
         printf("\nName: %s", details[i].ename);
